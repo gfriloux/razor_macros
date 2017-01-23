@@ -1,0 +1,19 @@
+!Loop
+// This macro will make use of Liquor Bottles to drop your mana
+// and raise your meditation skill.
+// It is HIGHLY recommended for you to have 100 INT before
+// raising meditation skill.
+// The amount of mana depends on your meditation skill level.
+// If the desired value is X, then you can can know it by following
+// This equation : X = 120 - Current_Meditation_%.
+// So for a 90% Meditation Skill : X = 120 - 90 = 30.
+Assistant.Macros.IfAction|1|1|30
+Assistant.Macros.DoubleClickTypeAction|2459|True
+Assistant.Macros.WaitForTargetAction|30
+Assistant.Macros.HotKeyAction|1059|
+Assistant.Macros.PauseAction|00:00:20
+Assistant.Macros.ElseAction
+Assistant.Macros.UseSkillAction|46
+Assistant.Macros.SpeechAction|0|52|3|FRA|0|GM
+Assistant.Macros.PauseAction|00:00:10.5000000
+Assistant.Macros.EndIfAction

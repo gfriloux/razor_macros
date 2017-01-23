@@ -1,0 +1,14 @@
+!Loop
+// To use this script, find an animal, trap it with chests, or anything
+// that would prevent it from attacking you, and run the script.
+Assistant.Macros.UseSkillAction|22
+Assistant.Macros.WaitForTargetAction|5
+// Target animal
+Assistant.Macros.AbsoluteTargetAction|0|1|232824|1357|545|8|217
+Assistant.Macros.WaitForTargetAction|5
+Assistant.Macros.HotKeyAction|1059|
+Assistant.Macros.PauseAction|00:00:00.5000000
+Assistant.Macros.IfAction|4|0|succeeds
+Assistant.Macros.PauseAction|00:00:05
+Assistant.Macros.EndIfAction
+Assistant.Macros.PauseAction|00:00:05

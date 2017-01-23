@@ -1,0 +1,31 @@
+!Loop
+// This macro will use poison potions to poison a
+// katana supposed to be in your backpack.
+// You will also need to get a lot of bandages near you
+// or inside your backpack.
+// Your poison potions can be in any container, as long
+// as it is opened (this can be a container on floor).
+// You will need to edit the "DropAction" line to set
+// which container to use for storing your empty bottles.
+Assistant.Macros.IfAction|3|-1|0
+Assistant.Macros.DoubleClickTypeAction|3617|True
+Assistant.Macros.WaitForTargetAction|30
+Assistant.Macros.HotKeyAction|1059|
+Assistant.Macros.PauseAction|00:00:20
+Assistant.Macros.EndIfAction
+Assistant.Macros.IfAction|0|0|70
+Assistant.Macros.DoubleClickTypeAction|3617|True
+Assistant.Macros.WaitForTargetAction|30
+Assistant.Macros.HotKeyAction|1059|
+Assistant.Macros.PauseAction|00:00:20
+Assistant.Macros.EndIfAction
+Assistant.Macros.UseSkillAction|30
+Assistant.Macros.WaitForTargetAction|30
+Assistant.Macros.TargetTypeAction|False|3850
+Assistant.Macros.WaitForTargetAction|30
+Assistant.Macros.TargetTypeAction|False|5119
+Assistant.Macros.PauseAction|00:00:11
+Assistant.Macros.LiftTypeAction|3854|1
+// Edit this line to set container for empty bottles
+Assistant.Macros.DropAction|0x404EB75C|(-1, -1, 0)|0
+Assistant.Macros.PauseAction|00:00:00.7500000

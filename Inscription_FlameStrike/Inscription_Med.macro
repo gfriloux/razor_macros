@@ -1,0 +1,6 @@
+!Loop
+Assistant.Macros.UseSkillAction|46
+Assistant.Macros.PauseAction|00:00:16
+Assistant.Macros.IfAction|1|1|100
+Assistant.Macros.HotKeyAction|0|Play: Inscription_FlameStrike\Inscription
+Assistant.Macros.EndIfAction

@@ -1,0 +1,6 @@
+!Loop
+Assistant.Macros.HotKeyAction|0|Restock Agent-1
+// Target the container that holds your regs & blank scrolls.
+Assistant.Macros.AbsoluteTargetAction|0|0|1078900572|1354|547|8|3650
+Assistant.Macros.PauseAction|00:00:03.5000000
+Assistant.Macros.HotKeyAction|0|Play: Inscription_FlameStrike\Inscription

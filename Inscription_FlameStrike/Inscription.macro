@@ -1,0 +1,33 @@
+!Loop
+// This macro will automatically create FlameStrike scrolls
+// As long as possible.
+// You will need a container that holds all your regs & blank scrolls.
+// This macro will drop your FS Scrolls into a container, this might
+// be the same container.
+// For this, you need to set 3 things :
+// - Container used to drop scrolls in (inside this script)
+// - Set absolute location of blank scrolls inside your bag
+//   (inside this script).
+//   If you try to detect blank scrolls by type, you will
+//   Face a bug with razor.
+// - Configure Restock-1 and absolute target from
+//   Inscription_Restock.macro.
+Assistant.Macros.IfAction|50|0|10|Sulfurous Ash
+Assistant.Macros.HotKeyAction|0|Play: Inscription_FlameStrike\Inscription_Restock
+Assistant.Macros.EndIfAction
+Assistant.Macros.IfAction|1|0|41
+Assistant.Macros.HotKeyAction|0|Play: Inscription_FlameStrike\Inscription_Med
+Assistant.Macros.EndIfAction
+Assistant.Macros.UseSkillAction|23
+Assistant.Macros.WaitForTargetAction|30
+// Target your blank scrolls (from your backpack).
+Assistant.Macros.AbsoluteTargetAction|0|1|1084232606|45|83|0|3636
+Assistant.Macros.WaitForMenuAction|0|300
+Assistant.Macros.MenuResponseAction|2|8390|0
+Assistant.Macros.WaitForMenuAction|0|300
+Assistant.Macros.MenuResponseAction|1|8370|0
+Assistant.Macros.PauseAction|00:00:08
+Assistant.Macros.LiftTypeAction|8031|6
+// Set it to drop into your container
+Assistant.Macros.DropAction|0x404EB75C|(-1, -1, 0)|0
+Assistant.Macros.PauseAction|00:00:01

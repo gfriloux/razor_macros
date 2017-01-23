@@ -1,0 +1,24 @@
+!Loop
+// This script will always shop trees standing one tile in west.
+// If your axe break, you need to equip a new one to allow
+// this macro to continue working.
+Assistant.Macros.IfAction|8|-1|0
+Assistant.Macros.DressAction|Axe
+Assistant.Macros.EndIfAction
+Assistant.Macros.HotKeyAction|1305|
+Assistant.Macros.WaitForTargetAction|5
+Assistant.Macros.TargetRelLocAction|-1|0
+Assistant.Macros.PauseAction|00:00:01.1000000
+Assistant.Macros.IfAction|4|0|harvest
+Assistant.Macros.SpeechAction|0|52|3|ENU|0|next tree!
+Assistant.Macros.EndIfAction
+// Edit this value to adjust your max weight.
+Assistant.Macros.IfAction|5|1|350
+Assistant.Macros.SpeechAction|0|52|3|FRA|0|Making Boards!
+Assistant.Macros.DoubleClickTypeAction|4148|True
+Assistant.Macros.WaitForMenuAction|0|300
+Assistant.Macros.MenuResponseAction|1|7127|0
+Assistant.Macros.WaitForMenuAction|0|300
+Assistant.Macros.MenuResponseAction|1|7127|0
+Assistant.Macros.PauseAction|00:00:10
+Assistant.Macros.EndIfAction
